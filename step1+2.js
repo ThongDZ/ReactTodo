@@ -1,14 +1,10 @@
-const a = ('1,2,55');
-const b = a.split(',');
-let tong = 0;
-
 function add(input) {
-    if (a === "," && a == null) {
-    } else {
-        for (let i = 0; i < input.length; i++) {
-            tong += parseInt(input[i])
-        }
+    if (input === '' || input == null) {
+        return 0;
     }
-    console.log("Ket qua : "+ tong);
+    return input.split(',')
+        .map(item => parseInt(item))
+        .reduce((accumulator, currentValue) => accumulator + currentValue)
 }
-add(b);
+
+console.log(add('1,2,3,45'));
