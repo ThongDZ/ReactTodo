@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body>
+<script type="text/javascript">
+    const a = prompt("Nhap so can tinh");
+    const b = a.split(',');
+    let tong = 0;
+
+    function tinh_tong(input) {
+        if (a === "," && a == null) {
+        } else {
+            for (let i = 0; i < input.length; i++) {
+                tong += parseInt(input[i])
+            }
+        }
+        document.write("Ket qua : "+ tong);
+    }
+    tinh_tong(b);
+
+</script>
+</body>
+</html>
