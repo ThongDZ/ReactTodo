@@ -1,4 +1,5 @@
 function add(input) {
+    console.log(input);
     if (input === '' || input === null) {
         return 0
     }
@@ -6,4 +7,4 @@ function add(input) {
     return array.reduce((accumulator, currentValue) => accumulator + currentValue)
 }
 
-console.log(add('1\n2,3'));
+console.log(add('1\n2,3,14'));

@@ -6,4 +6,4 @@ function add(input) {
     return array.reduce((accumulator, currentValue) => accumulator + currentValue)
 }
 
-console.log(add('1,2,3,4'));
+console.log(add('1,2,3,14'));
